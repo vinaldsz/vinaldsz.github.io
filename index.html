@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <!-- <img src="images/logo.png" class="logo" /> -->
+          <ul>
+            <li>
+              <a href="#header" onclick="smoothScroll(event, 'header')">Home</a>
+            </li>
+            <li>
+              <a href="#about" onclick="smoothScroll(event, 'about')">About</a>
+            </li>
+            <li>
+              <a href="#projects" onclick="smoothScroll(event, 'projects')"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#contact" onclick="smoothScroll(event, 'contact')"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <div class="text-content">
+            <h1>Hi, I'm <span class="name">Vinal</span></h1>
+            <p class="animated-text">
+              <span class="text-item active">Grad MSCS Student</span>
+              <span class="text-item">Data Engineer</span>
+              <span class="text-item">Nature Lover</span>
+            </p>
+            <a
+              href="documents/Job Resume -Data.pdf"
+              download="Vinal_Resume.pdf"
+              class="resume-btn"
+            >
+              <span class="download-icon">⬇</span>
+              Download Resume
+            </a>
+          </div>
+          <div class="profile-pic">
+            <img
+              src="images/ProfilePicture.png"
+              alt="Vinal's Profile Picture"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-2">
+            <h2 class="section-title">About Me</h2>
+            <p>
+              From debugging COBOL systems in India to teaching Python at
+              Northeastern - quite the journey, isn't it? I'm that person who
+              gets genuinely excited when a complex data pipeline finally works
+              perfectly (yes, I celebrate small wins!). After 5+ years of
+              turning messy data into meaningful insights, I've learnt that the
+              real magic happens when technology actually solves real problems
+              for real people. Currently pursuing my Master's in Computer
+              Science while simultaneously teaching 80+ bright minds the art of
+              coding. When I'm not automating workflows or mentoring students,
+              you'll find me exploring Boston's food scene, hiking trails, or
+              trying to convince my friends that data visualization can be as
+              beautiful as nature itself. I believe in writing code that doesn't
+              just work, but works elegantly - and in explaining complex tech
+              concepts in simple terms (a skill that comes quite handy in the
+              classroom!).
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Programming Languages:</span><br /><small
+                    >Python, C++, SQL, JavaScript</small
+                  ><br /><small
+                    >Building robust data applications and solving complex data
+                    problems with industry-standard languages.</small
+                  >
+                </li>
+                <li>
+                  <span>Data Analysis & Manipulation:</span><br /><small
+                    >Pandas, NumPy, Matplotlib, Seaborn</small
+                  ><br /><small
+                    >Transforming raw data into meaningful insights through
+                    statistical analysis and visualization.</small
+                  >
+                </li>
+                <li>
+                  <span>Databases:</span><br /><small
+                    >PostgreSQL, MongoDB, Redis, Oracle, MySQL</small
+                  ><br /><small
+                    >Managing and optimizing data storage across relational and
+                    NoSQL database systems.</small
+                  >
+                </li>
+                <li>
+                  <span>Data Engineering:</span><br /><small
+                    >ETL(DataStage, AWS Glue), Apache Spark</small
+                  ><br /><small
+                    >Building robust data pipelines to process and transform
+                    large datasets efficiently at scale.</small
+                  >
+                </li>
+                <li>
+                  <span>Data Visualization:</span><br /><small
+                    >Power BI, SSRS</small
+                  ><br /><small
+                    >Creating compelling dashboards and reports that communicate
+                    data stories effectively to stakeholders.</small
+                  >
+                </li>
+                <li>
+                  <span>Machine Learning:</span><br /><small
+                    >scikit-learn, TensorFlow, XGBoost</small
+                  ><br /><small
+                    >Implementing ML models for data-driven insights and
+                    automated analytics in production systems.</small
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2025 - Current:</span><br /><small
+                    >Graduate Research Apprentice</small
+                  ><br /><small
+                    >Assess the impact of LLM in the city of Oakland</small
+                  >
+                </li>
+                <li>
+                  <span>2024 - 2025:</span><br /><small
+                    >Graduate Teaching Assistant & Lead TA</small
+                  ><br /><small
+                    >Lead TA managing 4-person TA team for Oakland campus,
+                    conducting labs for 80+ students across multiple programming
+                    languages (Kotlin, Java, Python, Pyret). Facilitate
+                    recitation sessions, office hours, and provide personalized
+                    tutoring across Foundations of CS, Program Design, and Data
+                    Science. Demonstrated expertise in multi-paradigm
+                    programming instruction and student mentorship at
+                    scale.</small
+                  >
+                </li>
+                <li>
+                  <span>2022 - 2024:</span><br /><small
+                    >Data Engineering, Mgmt and Governance Sr. Analyst</small
+                  ><br /><small
+                    >Led automation initiatives across BODS, EDW, and DataStage
+                    systems, delivering solutions that saved 70+ FTEs annually.
+                    Automated report generation processes and implemented
+                    shift-left strategies to reduce support load. Utilized
+                    Python and SQL for debugging production issues and improving
+                    data reliability.</small
+                  >
+                </li>
+                <li>
+                  <span>2019 - 2022:</span><br /><small
+                    >Senior Systems Engineer</small
+                  ><br /><small
+                    >Migrated 8+ legacy COBOL ETL pipelines to DataStage,
+                    achieving 98% data accuracy. Enhanced workflow efficiency by
+                    10% and developed automation scripts reducing manual effort
+                    by 8 hours annually. Collaborated with stakeholders on
+                    complex financial data transformations.</small
+                  >
+                </li>
+                <li>
+                  <span>2019 - 2019:</span><br /><small
+                    >Systems Engineer Intern</small
+                  ><br /><small
+                    >Developed BI solution for grocery sales data using SSIS and
+                    SQL ETL processes. Designed data warehouse with dimensional
+                    and fact tables for efficient analysis. Created dynamic
+                    dashboards and reports using PowerBI and SSRS to provide
+                    real-time sales insights.</small
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2024 - Current:</span><br /><small
+                    >Master's in Computer and Information Sciences</small
+                  ><br /><small>Northeastern University, USA</small>
+                </li>
+                <li>
+                  <span>2015 - 2019:</span><br /><small
+                    >Bachelor of Engineering in Information Science</small
+                  ><br /><small>NMAM Institute of Technology, India</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Journey Section -->
+      <div id="journey">
+        <div class="container">
+          <h2 class="section-title">My Journey</h2>
+          <div class="journey-timeline">
+            <div class="journey-item">
+              <div class="journey-circle">
+                <span class="journey-number">What</span>
+              </div>
+              <div class="journey-content">
+                <h3>Intern</h3>
+                <p>
+                  Built foundational understanding of BI ecosystems, data
+                  warehousing concepts, and enterprise analytics - the
+                  cornerstone of my data engineering journey
+                </p>
+              </div>
+            </div>
+            <div class="journey-item">
+              <div class="journey-circle">
+                <span class="journey-number">How</span>
+              </div>
+              <div class="journey-content">
+                <h3>SSE</h3>
+                <p>
+                  Mastered the art of translating business requirements into
+                  technical solutions, bridging the gap between stakeholder
+                  needs and scalable data architecture.
+                </p>
+              </div>
+            </div>
+
+            <div class="journey-item">
+              <div class="journey-circle">
+                <span class="journey-number">Why</span>
+              </div>
+              <div class="journey-content">
+                <h3>Sr. DE Analyst</h3>
+                <p>
+                  Evolved into a strategic thinker, understanding how data
+                  engineering drives business value and leads cross-functional
+                  collaboration for enterprise-wide impact.
+                </p>
+              </div>
+            </div>
+
+            <div class="journey-item">
+              <div class="journey-circle">
+                <span class="journey-number">More</span>
+              </div>
+              <div class="journey-content">
+                <h3>MSCS</h3>
+                <p>
+                  Advancing cutting-edge skills in ML engineering and AI
+                  systems, preparing to lead the next generation of intelligent
+                  data solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Section -->
+      <div id="projects">
+        <div class="container">
+          <h2 class="section-title">My Projects</h2>
+
+          <!-- Data Engineering and Analysis Projects -->
+          <div class="project-category">
+            <h3 class="category-title">Data Engineering & Analysis</h3>
+            <div class="projects-grid">
+              <div class="project-card">
+                <div class="project-header">
+                  <h4>Walmart Sales Forecasting</h4>
+                  <a
+                    href="https://github.com/vinaldsz/Walmart_Sales_Forecasting.git"
+                    target="_blank"
+                    class="github-link"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <p class="project-description">
+                  End-to-end retail sales analysis and forecasting system using
+                  machine learning to identify trends across multi-store
+                  datasets and predict weekly sales for demand planning.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Jupyter Notebook</span>
+                  <span class="tech-tag">Linear Regression</span>
+                  <span class="tech-tag">Pandas</span>
+                  <span class="tech-tag">NumPy</span>
+                  <span class="tech-tag">scikit-learn</span>
+                  <span class="tech-tag">seaborn</span>
+                  <span class="tech-tag">Matplotlib</span>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <div class="project-header">
+                  <h4>Flight Delay Prediction</h4>
+                  <a
+                    href="https://github.com/yourusername/analytics-dashboard"
+                    target="_blank"
+                    class="github-link"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <p class="project-description">
+                  AWS SageMaker-powered flight delay prediction model using
+                  580K+ records, improving detection accuracy from 0.2% to 11.6%
+                  through XGBoost and advanced feature engineering.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">AWS SageMaker</span>
+                  <span class="tech-tag">XGBoost</span>
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Pandas</span>
+                  <span class="tech-tag">NumPy</span>
+                  <span class="tech-tag">scikit-learn</span>
+                  <span class="tech-tag">seaborn</span>
+                  <span class="tech-tag">Matplotlib</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Development Projects -->
+          <div class="project-category">
+            <h3 class="category-title">Web Development</h3>
+            <div class="projects-grid">
+              <div class="project-card">
+                <div class="project-header">
+                  <h4>Flora</h4>
+                  <a
+                    href="https://github.com/vinaldsz/nodeExpressMongoRedisEJS_ExpenseManagement.git"
+                    target="_blank"
+                    class="github-link"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <p class="project-description">
+                  Expense tracking system for Jasmine farmers in India with
+                  real-time data management and session handling.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">EJS</span>
+                  <span class="tech-tag">MongoDB</span>
+                  <span class="tech-tag">Redis</span>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <div class="project-header">
+                  <h4>Skill Xchange - Skill Swap Marketplace</h4>
+                  <a
+                    href="https://github.com/vinaldsz/skill-Xchange.git"
+                    target="_blank"
+                    class="github-link"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <p class="project-description">
+                  Skill Xchange, a marketplace for sharing skills. Project
+                  demonstrates the use of functional programming using react.js
+                  and firestore persistent storage.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">React.js</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">Firebase</span>
+                  <span class="tech-tag">Express.js</span>
+                  <span class="tech-tag">Bootstrap</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Other Projects -->
+          <div class="project-category">
+            <h3 class="category-title">Other</h3>
+            <div class="projects-grid">
+              <div class="project-card">
+                <div class="project-header">
+                  <h4>Socket.IO Chat Application</h4>
+                  <a
+                    href="https://github.com/vinaldsz/SocketIO_Messenger.git"
+                    target="_blank"
+                    class="github-link"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+                <p class="project-description">
+                  This project demonstrates the use of Socket.IO for real-time
+                  communication in a web application. It includes both
+                  server-side and client-side implementations to enable
+                  bidirectional communication.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">React.js</span>
+                  <span class="tech-tag">Socket.IO</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">HTML</span>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <div class="project-header">
+                  <h4>Facial Similarity Checker</h4>
+                  <a
+                    href="https://observablehq.com/d/60de971c7cd60d5c"
+                    target="_blank"
+                    class="observable-link"
+                  >
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                      />
+                      <text
+                        x="12"
+                        y="16"
+                        text-anchor="middle"
+                        fill="currentColor"
+                        font-size="12"
+                        font-weight="bold"
+                      >
+                        O
+                      </text>
+                    </svg>
+                  </a>
+                </div>
+                <p class="project-description">
+                  Machine learning-powered facial similarity analyzer that
+                  calculates resemblance scores between children and parents
+                  using face-api.js.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">Observable Notebook</span>
+                  <span class="tech-tag">face-api.js</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div id="contact">
+        <div class="container">
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                    />
+                  </svg>
+                </div>
+                <div class="contact-details">
+                  <h3>Email</h3>
+                  <p>
+                    <a href="mailto:dsouza.vi@northeastern.edu"
+                      >dsouza.vi@northeastern.edu</a
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"
+                    />
+                  </svg>
+                </div>
+                <div class="contact-details">
+                  <h3>Phone</h3>
+                  <p><a href="tel:+1234567890">+1 (510) 916-9023</a></p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                    />
+                  </svg>
+                </div>
+                <div class="contact-details">
+                  <h3>Location</h3>
+                  <p>San Leandro, CA, USA</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a
+                href="https://www.linkedin.com/in/vinal-dsouza-9a9912187/"
+                target="_blank"
+                class="social-link"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://github.com/vinaldsz?tab=repositories"
+                target="_blank"
+                class="social-link"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" onclick="scrollToTop()">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z" />
+      </svg>
+    </button>
+
+    <script>
+      var tabLinks = document.getElementsByClassName("tab-links");
+      var tabContents = document.getElementsByClassName("tab-contents");
+
+      // Smooth scroll function for navigation
+      function smoothScroll(event, targetId) {
+        event.preventDefault();
+        const target = document.getElementById(targetId);
+        if (target) {
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      }
+
+      // Scroll to top function
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+
+      // Show/hide scroll to top button based on scroll position
+      window.addEventListener("scroll", function () {
+        const scrollToTopBtn = document.getElementById("scrollToTop");
+        if (window.pageYOffset > 300) {
+          scrollToTopBtn.classList.add("show");
+        } else {
+          scrollToTopBtn.classList.remove("show");
+        }
+      });
+
+      function openTab(tabName) {
+        for (var i = 0; i < tabContents.length; i++) {
+          tabContents[i].classList.remove("active-tab");
+        }
+        document.getElementById(tabName).classList.add("active-tab");
+
+        for (var i = 0; i < tabLinks.length; i++) {
+          tabLinks[i].classList.remove("active-link");
+        }
+        event.currentTarget.classList.add("active-link");
+      }
+
+      // Handle About section visibility on scroll
+      window.addEventListener("scroll", function () {
+        const aboutSection = document.getElementById("about");
+        const rect = aboutSection.getBoundingClientRect();
+
+        // Check if about section is in viewport
+        if (rect.top <= window.innerHeight * 0.7) {
+          aboutSection.classList.add("in-view");
+        } else {
+          aboutSection.classList.remove("in-view");
+        }
+      });
+    </script>
+  </body>
+</html>
