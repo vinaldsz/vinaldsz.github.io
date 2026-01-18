@@ -3,7 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M2 2 L14 8 L8 10 L6 14 Z" fill="%23ff004f" stroke="%23ffffff" stroke-width="0.5"/></svg>')
+  cursor:
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M2 2 L14 8 L8 10 L6 14 Z" fill="%23ff004f" stroke="%23ffffff" stroke-width="0.5"/></svg>')
       2 2,
     auto;
 }
@@ -20,7 +21,8 @@ body {
 #header {
   position: relative;
   z-index: 5;
-  background: radial-gradient(
+  background:
+    radial-gradient(
       circle at 20% 80%,
       rgba(255, 0, 79, 0.1) 0%,
       transparent 50%
@@ -36,15 +38,28 @@ body {
 #about {
   position: relative;
   z-index: 4;
-  border-top: 2px solid rgba(255, 0, 79, 0.3);
   margin-top: 100vh; /* Push about section below the viewport */
+}
+
+@media (max-width: 768px) {
+  #about {
+    margin-top: 60vh;
+  }
+}
+
+@media (max-width: 480px) {
+  #about {
+    margin-top: 40vh;
+  }
 }
 
 /* Hide About Me title when on home page */
 #about .section-title {
   opacity: 0;
   transform: translateY(-50px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
 }
 
 /* Show About Me title when section is in view */
@@ -55,23 +70,45 @@ body {
 
 #journey {
   position: relative;
-  z-index: 3;
-  border-top: 2px solid rgba(255, 0, 79, 0.2);
+  z-index: 4;
+  margin-top: 100vh; /* Push about section below the viewport */
 }
-
+#journey .section-title {
+  opacity: 0;
+  transform: translateY(-50px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+}
+/* Show About Me title when section is in view */
+#journey.in-view .section-title {
+  opacity: 1;
+  transform: translateY(0);
+}
 #projects {
   position: relative;
   z-index: 2;
-  border-top: 2px solid rgba(255, 0, 79, 0.15);
 }
 
 #contact {
   position: relative;
   z-index: 1;
-  border-top: 2px solid rgba(255, 0, 79, 0.1);
 }
 .container {
-  padding: 40px 10% 20px 10%;
+  padding: 80px 10% 20px 10%;
+}
+
+/* Mobile Container Padding */
+@media (max-width: 768px) {
+  .container {
+    padding: 30px 6% 15px 6%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 25px 5% 12px 5%;
+  }
 }
 .logo {
   font-family: "Playfair Display", serif;
@@ -105,6 +142,48 @@ nav ul li a {
   position: relative;
 }
 
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  nav ul {
+    margin-left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  nav ul li {
+    margin: 0 12px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 24px;
+  }
+
+  nav ul li {
+    margin: 0 8px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+}
+
 nav ul li a::after {
   content: "";
   width: 0;
@@ -135,6 +214,56 @@ nav ul li a:hover::after {
   object-position: center;
   background: hsl(9, 86%, 63%);
   box-shadow: 0 0 20px rgba(255, 0, 79, 0.3);
+}
+
+/* Mobile Responsiveness for Header */
+@media (max-width: 768px) {
+  .header-text {
+    flex-direction: column;
+    gap: 40px;
+    font-size: 28px;
+    margin-top: 30%;
+  }
+
+  .profile-pic img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .text-content h1 {
+    font-size: 28px;
+  }
+
+  .resume-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-text {
+    margin-top: 40%;
+    font-size: 24px;
+    gap: 30px;
+  }
+
+  .profile-pic img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .text-content h1 {
+    font-size: 24px;
+  }
+
+  .animated-text {
+    font-size: 18px;
+  }
+
+  .resume-btn {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
 }
 
 .name {
@@ -236,18 +365,32 @@ nav ul li a:hover::after {
 
 /* Journey Section */
 #journey {
-  padding: 100px 0;
-  background: #000;
+  background: linear-gradient(135deg, #111 0%, #1a1a1a 50%, #111 100%);
   box-shadow: 0 -30px 60px rgba(0, 0, 0, 0.9);
   margin-top: -100px;
   transform: translateZ(0);
+}
+
+@media (max-width: 768px) {
+  #journey {
+    padding: 70px 0;
+    margin-top: -50px;
+  }
+}
+
+@media (max-width: 480px) {
+  #journey {
+    padding: 60px 0;
+    margin-top: -25px;
+  }
 }
 
 .section-title {
   text-align: center;
   font-size: 42px;
   color: #fff;
-  margin-bottom: 80px;
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 300;
   letter-spacing: 2px;
   position: relative;
@@ -382,6 +525,20 @@ nav ul li a:hover::after {
   transform: translateZ(0);
 }
 
+@media (max-width: 768px) {
+  #about {
+    padding: 60px 0;
+    margin-top: -40px;
+  }
+}
+
+@media (max-width: 480px) {
+  #about {
+    padding: 50px 0;
+    margin-top: -20px;
+  }
+}
+
 #about::before {
   content: "";
   position: absolute;
@@ -389,7 +546,8 @@ nav ul li a:hover::after {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(
+  background:
+    radial-gradient(
       circle at 20% 30%,
       rgba(255, 0, 79, 0.03) 0%,
       transparent 50%
@@ -495,8 +653,8 @@ nav ul li a:hover::after {
 .tab-contents {
   margin-top: 15px;
   position: relative;
-  min-height: 700px;
-  height: 700px;
+  min-height: 800px;
+  height: 800px;
   overflow-y: auto;
   padding-right: 10px;
 }
@@ -609,10 +767,24 @@ nav ul li a:hover::after {
 /* Projects Section */
 #projects {
   padding: 100px 0;
-  background: #111;
+  background: linear-gradient(135deg, #111 0%, #1a1a1a 50%, #111 100%);
   box-shadow: 0 -40px 70px rgba(0, 0, 0, 0.95);
   margin-top: -120px;
   transform: translateZ(0);
+}
+
+@media (max-width: 768px) {
+  #projects {
+    padding: 70px 0;
+    margin-top: -60px;
+  }
+}
+
+@media (max-width: 480px) {
+  #projects {
+    padding: 60px 0;
+    margin-top: -30px;
+  }
 }
 
 .project-category {
@@ -825,6 +997,11 @@ nav ul li a:hover::after {
   .project-category {
     margin-bottom: 60px;
   }
+
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -837,6 +1014,24 @@ nav ul li a:hover::after {
   .github-link {
     align-self: flex-end;
   }
+
+  .projects-grid {
+    gap: 15px;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+
+  .category-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .section-title {
+    font-size: 26px;
+    margin-bottom: 35px;
+  }
 }
 
 /* Contact Section */
@@ -846,6 +1041,20 @@ nav ul li a:hover::after {
   box-shadow: 0 -50px 80px rgba(0, 0, 0, 1);
   margin-top: -140px;
   transform: translateZ(0);
+}
+
+@media (max-width: 768px) {
+  #contact {
+    padding: 70px 0;
+    margin-top: -70px;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact {
+    padding: 60px 0;
+    margin-top: -35px;
+  }
 }
 
 .contact-content {
@@ -1016,6 +1225,27 @@ nav ul li a:hover::after {
 
   .social-links {
     justify-content: center;
+  }
+
+  .contact-content h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-item {
+    padding: 12px 15px;
+    min-width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-details h3 {
+    font-size: 16px;
+  }
+
+  .contact-content h2 {
+    font-size: 26px;
   }
 }
 
